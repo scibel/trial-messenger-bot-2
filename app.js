@@ -20,7 +20,9 @@ const Keyv = require("keyv");
 
 // One of the following
 const keyv = new Keyv();
-
+app.get("/", (req, res) => {
+  res.status(200).send("Deployed");
+});
 // Handle DB connection errors
 
 // Sets server port and logs message on success
